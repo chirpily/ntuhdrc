@@ -1,7 +1,7 @@
 %let ratio=4;  /*case:control=1:ratio*/
 %let seed=123456; 
 
-
+vjknvaaljnva.knvaln
 v,dnv nmv a, c., ascj.abkj.av.as v.a 
 
 /*case*/
