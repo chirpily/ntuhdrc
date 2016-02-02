@@ -1,6 +1,9 @@
 %let ratio=4;  /*case:control=1:ratio*/
 %let seed=123456; 
 
+
+v,dnv nmv a, c., ascj.abkj.av.as v.a 
+
 /*case*/
 data case(keep=ID ID_S  id_birth_ym case mentalg assaultdate); 
 set mydata.case_control_id;
@@ -14,6 +17,10 @@ set mydata.case_control_id;
 if assault=0;
 run;
 
+
+
+
+vsjnvsanvzaknvs.anv.anvlnva/
 proc means data=case nway noprint;
 class ID_S  id_birth_ym mentalg assaultdate;
 var case;
@@ -26,7 +33,7 @@ run;
 
 proc sql;
 create table controlcnt as
-select a.num, a.ncase, a.assaultdate, b.id, b.id_s, b.mentalg, ranuni(&seed) as rn /*¥[¤W¶Ã¼Æ*/
+select a.num, a.ncase, a.assaultdate, b.id, b.id_s, b.mentalg, ranuni(&seed) as rn /*Â¥[Â¤WÂ¶ÃƒÂ¼Ã†*/
 from casecnt as a join control as b
 on a.id_s=b.id_s and a.id_birth_ym=b.id_birth_ym and  a.mentalg=b.mentalg
 order by num, rn;
